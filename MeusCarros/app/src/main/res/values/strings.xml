@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Meus Carros</string>
+    <string name="carPhoto">Foto do carro</string>
+    <string name="name">Nome</string>
+    <string name="placa">Placa</string>
+    <string name="cor">Cor</string>
+    <string name="imgPlaca">Icone para placa do carro</string>
+    <string name="imgName">Icone para o nome do carro</string>
+    <string name="imgCor">Icone para a cor do carro</string>
+    <string name="salvar">Salvar</string>
+    <string name="novo">Novo carro</string>
+    <string name="emptyPlaca">Sem placa</string>
+    <string name="emptyName">Sem nome</string>
+    <string name="emptyCor">Sem cor</string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".project.view.DetailCarroActivity">
+
+    <ImageView
+        android:id="@+id/imgCar"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/carPhoto"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_car_gray_128dp"
+        tools:srcCompat="@drawable/ic_car_gray_128dp" />
+
+    <TextView
+        android:id="@+id/carNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/emptyName"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgName"
+        app:layout_constraintTop_toBottomOf="@+id/imgCar" />
+
+    <TextView
+        android:id="@+id/carPlaca"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/emptyPlaca"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgPlaca"
+        app:layout_constraintTop_toBottomOf="@+id/carNome" />
+
+    <TextView
+        android:id="@+id/carCor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/emptyCor"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgColor"
+        app:layout_constraintTop_toBottomOf="@+id/carPlaca" />
+
+    <ImageView
+        android:id="@+id/imgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/imgName"
+        app:layout_constraintBottom_toBottomOf="@+id/carNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/carNome"
+        app:srcCompat="@drawable/ic_car_gray_24dp" />
+
+    <ImageView
+        android:id="@+id/imgPlaca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/imgPlaca"
+        app:layout_constraintBottom_toBottomOf="@+id/carPlaca"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/carPlaca"
+        app:srcCompat="@drawable/ic_placa_gray_24dp" />
+
+    <ImageView
+        android:id="@+id/imgColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/imgCor"
+        app:layout_constraintBottom_toBottomOf="@+id/carCor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/carCor"
+        app:srcCompat="@drawable/ic_color_gray_24dp" />
+
+</android.support.constraint.ConstraintLayout>
